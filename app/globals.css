@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --baby-pink: #ffc0cb;
+  --mint: #c9e4ca;
+  --lavender: #e6e6fa;
+  --ivory: #fffff0;
+  --gold: #d4af37;
+  --soft-purple: #c4b5fd;
+  --soft-pink: #f9a8d4;
+}
+
+body {
+  @apply text-gray-800 font-sans;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-playfair;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(135deg, var(--soft-pink) 0%, var(--soft-purple) 100%);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-full font-medium 
+       shadow-md transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-purple-500;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-gray-700 border border-gray-300 rounded-full 
+       font-medium shadow-sm transition-all duration-300 hover:shadow-md hover:border-pink-300 hover:text-pink-500;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.masonry-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-pink-300 
+       focus:ring-2 focus:ring-pink-100 focus:outline-none transition-all duration-300;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--soft-pink);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Gold accent color */
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
