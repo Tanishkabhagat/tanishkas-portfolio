@@ -238,7 +238,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Main content container */}
-      <motion.div className="container mx-auto px-4 z-10 text-center relative" style={{ y, opacity, scale }}>
+      <motion.div className="container mx-auto px-4 z-10 text-center relative  mt-20 md:mt-0" style={{ y, opacity, scale }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Abstract design on the left for larger screens, centered on mobile */}
           <div className="order-2 lg:order-1 flex justify-center">
