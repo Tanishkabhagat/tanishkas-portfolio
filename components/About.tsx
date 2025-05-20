@@ -22,26 +22,24 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-9">About Me</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A dreamy Pisces with a passion for creating beautiful, intuitive designs
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <motion.div style={{ y }} className="relative">
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-pink-200/30 rounded-full"></div>
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-lavender/40 rounded-full"></div>
+          <motion.div>
 
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative rounded-3xl shadow-xl mb-10">
               <Image
                 src="/placeholder.svg?height=600&width=500"
                 alt="Tanishka"
                 width={500}
                 height={600}
-                className="w-full h-auto"
+                className="w-full h-auto mt-10 rounded-2xl" 
               />
             </div>
           </motion.div>
@@ -79,7 +77,9 @@ export default function About() {
               <span className="px-3 py-1 bg-mint text-green-800 rounded-full text-sm">Branding</span>
               <span className="px-3 py-1 bg-ivory text-amber-800 rounded-full text-sm">Illustration</span>
               <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Web Development</span>
+              
             </div>
+            
           </motion.div>
         </div>
 
