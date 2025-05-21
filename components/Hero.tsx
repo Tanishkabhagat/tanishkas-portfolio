@@ -199,7 +199,7 @@ export default function Hero() {
   return (
     <motion.section
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-5 md:px-0 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -241,13 +241,13 @@ export default function Hero() {
       <motion.div className="container mx-auto px-4 z-10 text-center relative  mt-20 md:mt-0" style={{ y, opacity, scale }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Abstract design on the left for larger screens, centered on mobile */}
-          <div className="order-2 lg:order-1 flex justify-center">
+          <div className="order-1 flex justify-center">
             <AbstractDesign />
           </div>
 
           {/* Text content on the right for larger screens, top on mobile */}
           <motion.div
-            className="order-1 lg:order-2 text-left lg:text-left"
+            className="order-2 text-left lg:text-left"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}

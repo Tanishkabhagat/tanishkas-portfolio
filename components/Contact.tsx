@@ -39,7 +39,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="section-padding px-5 md:px-0">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

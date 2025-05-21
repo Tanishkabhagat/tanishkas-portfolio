@@ -15,8 +15,8 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], [100, -50])
 
   return (
-    <section id="about" ref={ref} className="section-padding bg-pink-50/50">
-      <div className="container mx-auto px-4">
+    <section id="about" ref={ref} className="section-padding px-4 md:px-0  bg-pink-50/50">
+      <div className="container w-50 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,12 +30,12 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
 
-            <div className="relative rounded-3xl shadow-xl mb-10">
+            <div className="relative rounded-3xl shadow-xl mb-10  w-full max-w-[500px] mx-auto">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/placeholder.svg"
                 alt="Tanishka"
                 width={500}
                 height={600}
@@ -49,8 +49,11 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="p-5 lg:p-8 md:p-2"
+            
+
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-pink-700">Hello, I'm Tanishka</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700">Hello, I'm Tanishka</h3>
 
             <div className="space-y-4 text-gray-700">
               <p>
