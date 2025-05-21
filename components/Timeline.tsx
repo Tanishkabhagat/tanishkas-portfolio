@@ -29,7 +29,7 @@ const timelineItems = [
   },
   {
     year: "2017",
-    title: "Bachelor of Fine Arts",
+    title: "Bachelor of Fine Arts ",
     company: "Design Institute",
     description: "Graduated with honors, specializing in digital media and interactive design.",
   },

@@ -281,7 +281,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              UI/UX Designer crafting intuitive digital experiences with a focus on elegance and functionality.
+            Design generalist with a specialist's eye — blending UI/UX, visuals, and motion into seamless, soulful experiences that look as good as they feel.
             </motion.p>
 
             <motion.div
