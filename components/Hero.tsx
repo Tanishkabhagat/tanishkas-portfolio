@@ -258,7 +258,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <span className="block font-light text-gray-400 text-xl md:text-2xl mb-2">Hello, I'm</span>
+              <span className="block font-light text-gray-400 text-xl md:text-2xl mb-2">nice to meet you, I'm</span>
               <span className="font-medium bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
                 Tanishka
               </span>

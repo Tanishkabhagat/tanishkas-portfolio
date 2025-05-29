@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-gray-600">hello@tanishka.design</p>
+                  <p className="text-gray-600">tanishka.bgt@gmail.com</p>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-gray-600">San Francisco, California</p>
+                  <p className="text-gray-600">Indore, (M.P) </p>
                 </div>
               </div>
             </div>

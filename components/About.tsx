@@ -15,7 +15,7 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], [100, -50])
 
   return (
-    <section id="about" ref={ref} className="section-padding px-4 md:px-0  bg-pink-50/50">
+    <section id="about" ref={ref} className="section-padding px-4 md:px-0 bg-pink-50/50">
       <div className="container w-50 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,24 +53,19 @@ export default function About() {
             
 
           >
-            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700">Hello, I'm Tanishka</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700 ">Hello, I'm Tanishka</h3>
 
             <div className="space-y-4 text-gray-700">
               <p>
-                As a Pisces, I bring a dreamy, intuitive approach to my design work. I believe in creating interfaces
-                that not only look beautiful but also evoke emotion and provide seamless experiences.
+                I’m a multidisciplinary designer and B.Tech student specializing in AI & Data Science. With experience in branding, UI/UX, motion graphics, and illustration, I work at the intersection of design and technology. My projects often explore frontend development, user experience, and the role of psychology in creating intuitive, human-centered solutions.
               </p>
 
               <p>
-                With over 5 years of experience in graphic design and UI/UX development, I've worked with clients across
-                various industries to bring their visions to life. My approach combines artistic sensibility with
-                technical expertise to create designs that are both aesthetically pleasing and functionally effective.
+                Beyond academics, I’m an active artist and content creator—I draw, paint, sculpt, make music, and code. This creative foundation allows me to approach problem-solving with both imagination and structure, crafting designs that are visually compelling and strategically effective.
               </p>
 
               <p>
-                When I'm not designing, you can find me exploring art galleries, practicing yoga, or getting lost in a
-                good book. I draw inspiration from nature, art, and the emotional connections we form with the world
-                around us.
+                I’m excited to contribute to teams where design, technology, and user experience come together to create meaningful impact. I aim to work on products that are intuitive, visually thoughtful, and built through collaboration and purpose.
               </p>
             </div>
 

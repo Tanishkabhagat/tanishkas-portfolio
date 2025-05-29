@@ -4,34 +4,34 @@ import { motion } from "framer-motion"
 
 const timelineItems = [
   {
-    year: "2023",
-    title: "Senior UI/UX Designer",
-    company: "DreamCanvas Studio",
-    description: "Leading design projects for major clients and mentoring junior designers.",
+    year: "2025",
+    title: "Content & Brand Designer",
+    company: "Alekhya Design Studio (Pune)",
+    description: "Led the visual branding for the studio, including logo design, brand identity, and social media creatives. ",
+  },
+  {
+    year: "2024",
+    title: "Core Team (Content Creation)",
+    company: "Friends of Figma (Indore)",
+    description: " Created reels, handled event videography, and contributed to design discussions during local meetups.",
+  },
+  {
+    year: "2024",
+    title: "Social media & Design Head",
+    company: "Google Developer Groups On Campus CDGI",
+    description: "Led the visual branding and social media strategy for campus tech events. Created engaging posts, reels, and design assets to boost outreach and community involvement.",
+  },
+  {
+    year: "2022",
+    title: "Bachelor of Technology (2022-2026)",
+    institute: "Chameli Devi Group of Institutions",
+    description: "Specializing in Artificial Intelligence and Data Science with a focus on machine learning, deep learning, data analytics, and intelligent systems. ",
   },
   {
     year: "2021",
-    title: "UI/UX Designer",
-    company: "Pixel Perfect Agency",
-    description: "Created user-centered designs for web and mobile applications.",
-  },
-  {
-    year: "2019",
-    title: "Graphic Designer",
-    company: "Creative Minds Inc.",
-    description: "Developed brand identities and marketing materials for various clients across different industries.",
-  },
-  {
-    year: "2018",
-    title: "Design Intern",
-    company: "Visionary Designs",
-    description: "Assisted senior designers and learned the fundamentals of UI/UX design.",
-  },
-  {
-    year: "2017",
-    title: "Bachelor of Fine Arts ",
-    company: "Design Institute",
-    description: "Graduated with honors, specializing in digital media and interactive design.",
+    title: "10+2(PCM) ",
+    company: "GOLDEN INTERNATIONAL SCHOOL",
+    description: "Completed senior secondary education with Physics, Chemistry, and Mathematics as core subjects.",
   },
 ]
 
@@ -47,7 +47,7 @@ export default function Timeline() {
         My Journey
       </motion.h3>
 
-      <div className="relative">
+      <div className="relative px-4 md:px-0">
         {/* Timeline line */}
         <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-pink-200"></div>
 
