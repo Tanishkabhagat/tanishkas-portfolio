@@ -1,25 +1,25 @@
 import type { Project } from "@/types"
 
 export const projects: Project[] = [
-  {
+  /*{
     id: 1,
-    title: "Dreamy E-commerce App",
-    slug: "dreamy-ecommerce-app",
-    category: "UI/UX",
-    description: "A pastel-themed e-commerce app for a boutique clothing store",
+    title: "C.H.H.A.Y.A",
+    slug: "temple-anti-theft",
+    category: "Software Development",
+    description: "Computer Vision / Python / Security / Surveillance",
     coverImage: "/placeholder.svg?height=600&width=800",
-    role: "UI/UX Designer & Developer",
-    timeline: "June 2023 - August 2023",
-    tools: "Figma, React, Tailwind CSS",
+    role: " Designer & Developer (Hardware + Software)",
+    timeline: "June 2025 - Present",
+    tools: "Python, OpenCV, Playsound/Pygame, smtplib, Computer/Laptop, Webcam/CCTV, Speakers, Mobile Phone",
     content:
-      "This project involved creating a complete e-commerce experience for a boutique clothing store. The design focuses on soft pastel colors and intuitive navigation to create a dreamy shopping experience. I was responsible for the entire design process from wireframing to final implementation.",
+      "C.H.H.A.Y.A (Centralized Harm Handling & Alert Yielding Assistant) is a lightweight, intelligent anti-theft surveillance system designed to protect sacred spaces such as temples using minimal hardware—just a basic computer and camera. The system uses computer vision techniques to detect unauthorized movement in real time, instantly responding with an audible alarm and optionally alerting the caretaker through email or messaging services.",
     gallery: [
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",
     ],
-  },
+  },*/
   {
     id: 2,
     title: "Wellness App Branding",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
       "/placeholder.svg?height=600&width=800",
     ],
   },
-  {
+  /*{
     id: 4,
     title: "Social Media Dashboard",
     slug: "social-media-dashboard",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",
     ],
-  },
+  },*/
   {
     id: 5,
     title: "Beauty Brand Packaging",
@@ -113,4 +113,24 @@ export const projects: Project[] = [
       "/placeholder.svg?height=600&width=800",
     ],
   },
+
+  {
+    id: 1,
+    title: "KANBAN BOARD",
+    slug: "temple-anti-theft",
+    category: "Front-End Development",
+    description: "Task Management / Web App / Minimal ",
+    coverImage: "/placeholder.svg?height=600&width=800",
+    role: " Designer & Developer (Software)",
+    timeline: "June 2025 - Present",
+    tools: "Next.JS, TailwindCSS, Web Storage API, React",
+    content:
+      "This project is a client-side Kanban board application that I built using Next.js and React. It provides a straightforward way to manage tasks across different stages (like To Do, In Progress, and Done) with an intuitive drag-and-drop interface for moving tasks around. Core Functionality: Drag-and-Drop, Data Persistence, Task Management Customization. ",
+    gallery: [
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+    ],
+  }
 ]

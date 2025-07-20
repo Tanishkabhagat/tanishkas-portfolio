@@ -53,7 +53,7 @@ export default function About() {
             
 
           >
-            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700 ">Hello, I'm Tanishka</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700 ">Tanishka Bhagat</h3>
 
             <div className="space-y-4 text-gray-700">
               <p>

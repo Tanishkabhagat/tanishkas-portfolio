@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import PortfolioCard from "./PortfolioCard"
 import { projects } from "@/data/projects"
 
-const categories = ["All", "UI/UX", "Graphic Design", "Branding","Video editing"]
+const categories = ["All", "UI/UX", "Graphic Design", "Branding","Video editing",/*"Software Development"*/]
 
 export default function PortfolioGrid() {
   const [activeCategory, setActiveCategory] = useState("All")
