@@ -6,7 +6,7 @@ import Contact from "@/components/Contact"
 import FloatingElements from "@/components/FloatingElements"
 
 export const metadata: Metadata = {
-  title: "Tanishka | Graphic Designer & UI/UX Developer",
+  title: "Tanishka | Graphic Designer & video editor",
   description: "Crafting dreamy interfaces with a touch of Pisces energy",
 }
 

@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 import PortfolioCard from "./PortfolioCard"
 import { projects } from "@/data/projects"
 
-const categories = ["All", "UI/UX", "Graphic Design", "Branding","Video editing",/*"Software Development"*/]
+// const categories = ["All", "UI/UX", "Graphic Design", "Branding","Video editing",/*"Software Development"*/]
+const categories = ["All", "Branding", "Video Editing", "Graphic Design"]
 
 export default function PortfolioGrid() {
   const [activeCategory, setActiveCategory] = useState("All")
@@ -24,9 +25,9 @@ export default function PortfolioGrid() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-10">My Portfolio</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto ">
+          {/* <p className="text-lg text-gray-600 max-w-2xl mx-auto ">
             A collection of my creative work across different fields
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">

@@ -22,16 +22,16 @@ export const projects: Project[] = [
   },*/
   {
     id: 2,
-    title: "Wellness App Branding",
-    slug: "wellness-app-branding",
+    title: "  EDS Branding",
+    slug: "EDS Branding",
     category: "Branding",
-    description: "Complete brand identity for a mindfulness and wellness application",
+    description: "Complete brand identity for a college club",
     coverImage: "/placeholder.svg?height=600&width=800",
     role: "Brand Designer",
     timeline: "March 2023 - May 2023",
-    tools: "Adobe Illustrator, Photoshop, Procreate",
+    tools: "Adobe Illustrator, Photoshop, Canva",
     content:
-      "I created a comprehensive brand identity for a wellness app focused on mindfulness and meditation. The brand needed to convey a sense of calm and tranquility while remaining modern and approachable. The color palette features soft blues and lavenders to evoke a sense of peace.",
+      "I created a comprehensive brand identity for a student club focused on relevance and trends. The brand needed to convey a sense of calm and tranquility while remaining modern and approachable. The color palette features soft blues and lavenders to evoke a sense of peace.",
     gallery: [
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",

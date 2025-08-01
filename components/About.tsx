@@ -56,26 +56,27 @@ export default function About() {
             <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700 ">Tanishka Bhagat</h3>
 
             <div className="space-y-4 text-gray-700">
+              
               <p>
-                I’m a multidisciplinary designer and B.Tech student specializing in AI & Data Science. With experience in branding, UI/UX, motion graphics, and illustration, I work at the intersection of design and technology. My projects often explore frontend development, user experience, and the role of psychology in creating intuitive, human-centered solutions.
+                I’m a multidisciplinary Graphic Designer and Video Editor with a sharp eye for detail and a deep love for visual storytelling. From dynamic motion graphics to sleek branding suites, I transform ideas into visuals that connect, inform, and captivate.
               </p>
+              <h1 className="font-bold text-lg text-pink-600"> What I do </h1>
+              <li className=""> <b>Design for digital:</b> social posts, branding, layouts, promo graphics</li>
+              <li> <b>Edit videos:</b>  short-form, long-form, content cuts, event edits</li>
+              <li> <b>Add motion:</b> animated text, smooth transitions, logo builds</li>
 
-              <p>
-                Beyond academics, I’m an active artist and content creator—I draw, paint, sculpt, make music, and code. This creative foundation allows me to approach problem-solving with both imagination and structure, crafting designs that are visually compelling and strategically effective.
-              </p>
+            
+            
 
-              <p>
-                I’m excited to contribute to teams where design, technology, and user experience come together to create meaningful impact. I aim to work on products that are intuitive, visually thoughtful, and built through collaboration and purpose.
-              </p>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">UI/UX Design</span>
+              {/* <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">UI/UX Design</span> */}
               <span className="px-3 py-1 bg-lavender text-indigo-800 rounded-full text-sm">Graphic Design</span>
               <span className="px-3 py-1 bg-mint text-green-800 rounded-full text-sm">Branding</span>
               <span className="px-3 py-1 bg-ivory text-amber-800 rounded-full text-sm">Illustration</span>
-              <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Web Development</span>
-              
+              {/* <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Web Development</span> */}
+              <span className="px-3 py-1 bg-ivory text-pink-800 rounded-full text-sm">video editing</span>
             </div>
             
           </motion.div>
