@@ -15,8 +15,8 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], [100, -50])
 
   return (
-    <section id="about" ref={ref} className="section-padding bg-pink-50/50">
-      <div className="container mx-auto px-4">
+    <section id="about" ref={ref} className="section-padding px-4 md:px-0 bg-pink-50/50">
+      <div className="container w-50 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,12 +30,12 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-20">
           <motion.div>
 
-            <div className="relative rounded-3xl shadow-xl mb-10">
+            <div className="relative rounded-3xl shadow-xl mb-10  w-full max-w-[500px] mx-auto">
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/placeholder.svg"
                 alt="Tanishka"
                 width={500}
                 height={600}
@@ -49,35 +49,34 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            className="p-5 lg:p-8 md:p-2"
+            
+
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-pink-700">Hello, I'm Tanishka</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold mb-6 text-pink-700 ">Tanishka Bhagat</h3>
 
             <div className="space-y-4 text-gray-700">
+              
               <p>
-                As a Pisces, I bring a dreamy, intuitive approach to my design work. I believe in creating interfaces
-                that not only look beautiful but also evoke emotion and provide seamless experiences.
+                I’m a multidisciplinary Graphic Designer and Video Editor with a sharp eye for detail and a deep love for visual storytelling. From dynamic motion graphics to sleek branding suites, I transform ideas into visuals that connect, inform, and captivate.
               </p>
+              <h1 className="font-bold text-lg text-pink-600"> What I do </h1>
+              <li className=""> <b>Design for digital:</b> social posts, branding, layouts, promo graphics</li>
+              <li> <b>Edit videos:</b>  short-form, long-form, content cuts, event edits</li>
+              <li> <b>Add motion:</b> animated text, smooth transitions, logo builds</li>
 
-              <p>
-                With over 5 years of experience in graphic design and UI/UX development, I've worked with clients across
-                various industries to bring their visions to life. My approach combines artistic sensibility with
-                technical expertise to create designs that are both aesthetically pleasing and functionally effective.
-              </p>
+            
+            
 
-              <p>
-                When I'm not designing, you can find me exploring art galleries, practicing yoga, or getting lost in a
-                good book. I draw inspiration from nature, art, and the emotional connections we form with the world
-                around us.
-              </p>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">UI/UX Design</span>
+              {/* <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">UI/UX Design</span> */}
               <span className="px-3 py-1 bg-lavender text-indigo-800 rounded-full text-sm">Graphic Design</span>
               <span className="px-3 py-1 bg-mint text-green-800 rounded-full text-sm">Branding</span>
               <span className="px-3 py-1 bg-ivory text-amber-800 rounded-full text-sm">Illustration</span>
-              <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Web Development</span>
-              
+              {/* <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Web Development</span> */}
+              <span className="px-3 py-1 bg-ivory text-pink-800 rounded-full text-sm">video editing</span>
             </div>
             
           </motion.div>

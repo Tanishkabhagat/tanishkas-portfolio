@@ -6,14 +6,14 @@ import Contact from "@/components/Contact"
 import FloatingElements from "@/components/FloatingElements"
 
 export const metadata: Metadata = {
-  title: "Tanishka | Graphic Designer & UI/UX Developer",
+  title: "Tanishka | Graphic Designer & video editor",
   description: "Crafting dreamy interfaces with a touch of Pisces energy",
 }
 
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      <FloatingElements />
+      {/* <FloatingElements /> */}
       <Hero />
       <PortfolioGrid />
       <About />
