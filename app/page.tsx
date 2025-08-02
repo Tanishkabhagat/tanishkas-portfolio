@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      {/* <FloatingElements /> */}
       <Hero />
       <PortfolioGrid />
       <About />

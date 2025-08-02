@@ -9,5 +9,6 @@ export interface Project {
   timeline: string
   tools: string
   content: string
-  gallery: string[]
+  video?: string[];
+  gallery?: string[]
 }

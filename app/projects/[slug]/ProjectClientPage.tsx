@@ -17,13 +17,8 @@ interface Project {
   tools: string
   coverImage: string
   content: string
-  gallery: string[]
-}
-
-interface ProjectPageProps {
-  params: {
-    slug: string
-  }
+  gallery?: string[]
+  video?: string[]
 }
 
 export default function ProjectClientPage({ slug}:{slug:string}) {
@@ -83,7 +78,7 @@ export default function ProjectClientPage({ slug}:{slug:string}) {
         </div> */}
 
 
-        <ProjectGallery images={project.gallery} />
+        <ProjectGallery images={project.gallery} videos={project.video}/>
         <div className="prose prose-lg  max-w-[60%] mb-16 mt-8 ">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-pink-700">Project Overview</h2>
           <p>{project.content}</p>

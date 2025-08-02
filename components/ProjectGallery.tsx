@@ -1,43 +1,74 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
-import { X } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
 
 interface ProjectGalleryProps {
-  images: string[]
+  images?: string[];
+  videos?: string[];
 }
 
-export default function ProjectGallery({ images }: ProjectGalleryProps) {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null)
-
+export default function ProjectGallery({
+  images,
+  videos,
+}: ProjectGalleryProps) {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   return (
     <div>
-      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-pink-700">Project Gallery</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 text-pink-700">
+        Project Gallery
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {images.map((image, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
-            onClick={() => setSelectedImage(image)}
-            whileHover={{ scale: 1.03 }}
-          >
-            <Image
-              src={image || "/placeholder.svg"}
-              alt={`Project image ${index + 1}`}
-              width={400}
-              height={300}
-              className="w-full h-auto object-contain"
-            />
-          </motion.div>
-        ))}
-      </div>
-
+      {images && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {images.map((image, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+              onClick={() => setSelectedImage(image)}
+              whileHover={{ scale: 1.03 }}
+            >
+              <Image
+                src={image || "/placeholder.svg"}
+                alt={`Project image ${index + 1}`}
+                width={400}
+                height={300}
+                className="w-full h-auto object-contain"
+              />
+            </motion.div>
+          ))}
+        </div>
+      )}
+      {videos && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {videos.map((videoUrl, index) => {
+            const embedUrl = videoUrl.replace("watch?v=", "embed/");
+            return (
+             <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-red-400"
+              whileHover={{ scale: 1.03 }}
+            >
+                  <iframe
+                    src={embedUrl}
+                    title={`YouTube video ${index + 1}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-[300px] rounded-lg"
+                  />
+              </motion.div>
+            );
+          })}
+        </div>
+      )}
       {/* Lightbox */}
       <AnimatePresence>
         {selectedImage && (
@@ -75,5 +106,5 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
         )}
       </AnimatePresence>
     </div>
-  )
+  );
 }
