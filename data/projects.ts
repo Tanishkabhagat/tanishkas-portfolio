@@ -32,8 +32,8 @@ export const projects: Project[] = [
     content:
       "Edited a multi-part explainer video series for Bhindi AI, focused on clear visual pacing and clean transitions. I handled all post-production: cutting voiceovers to match visuals,chroma keying, adding motion graphics, and ensuring consistency across episodes. The goal was clarity, speed, and keeping viewers engaged without overwhelming them.",
     video:[
-      "https://youtu.be/Ofsj9E6i5is",
       "https://www.youtube.com/watch?v=0EpZlmC7f-I",
+      "https://www.youtube.com/watch?v=Ofsj9E6i5is",
       "https://www.youtube.com/watch?v=06P5l5Pk9z0"
     ]
   },
@@ -55,6 +55,25 @@ export const projects: Project[] = [
       "/hackwave4.png",
     ],
   },
+
+{
+    id: 6  ,
+    title: "SaaS Motion Graphics ",
+    slug: "SaaSdemo",
+    category: "Video Editing",
+    description: "Videography & Post Production",
+    coverImage: "/placeholder.svg?height=600&width=800",
+    role: "video editor",
+    timeline: "May 2025 - PRESENT",
+    tools: "After Effects",
+    content:
+      "Edited motion graphics to explain product features and user flows. Created UI animations, synced transitions, and kept visuals consistent with brand guidelines. Built for clarity, speed, and easy understanding.",
+    video: [
+      "https://www.youtube.com/watch?v=p-5awdlWU0U",
+      "https://www.youtube.com/watch?v=sPQ7Hnvh4kQ",
+    ],
+  },
+
   {
     id: 4,
     title: "Cinematic Edits",
@@ -68,9 +87,7 @@ export const projects: Project[] = [
     content:
       "Shot and edited a series of cinematic videos with a focus on visual storytelling, atmosphere, and emotion. I handled the full production workflow — from planning shots and capturing footage to editing, sound design, and color grading. Each piece was built to feel intentional and immersive, using light, movement, and pacing to carry the mood.",
     video: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+      "https://www.youtube.com/watch?v=kfQEChhYTFA",
     ],
   },
 

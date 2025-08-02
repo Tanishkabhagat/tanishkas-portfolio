@@ -12,7 +12,7 @@ export default function Footer() {
             <Link href="/" className="text-xl font-playfair font-bold text-pink-600">
               Tanishka
             </Link>
-            <p className="text-sm text-gray-600 mt-1">Crafting dreamy interfaces with a touch of Pisces energy</p>
+            <p className="text-sm text-gray-600 mt-1">take care friend</p>
           </div>
 
           <div className="flex flex-col items-center md:items-end">
