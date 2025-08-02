@@ -6,7 +6,7 @@ import PortfolioCard from "./PortfolioCard"
 import { projects } from "@/data/projects"
 
 // const categories = ["All", "UI/UX", "Graphic Design", "Branding","Video editing",/*"Software Development"*/]
-const categories = ["All", "Branding", "Video Editing", "Graphic Design"]
+const categories = ["All", "Video Editing", "Graphic Design", "Front-End Development", ]
 
 export default function PortfolioGrid() {
   const [activeCategory, setActiveCategory] = useState("All")

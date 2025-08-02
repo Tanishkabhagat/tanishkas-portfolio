@@ -32,7 +32,7 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
               alt={`Project image ${index + 1}`}
               width={400}
               height={300}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-contain"
             />
           </motion.div>
         ))}
