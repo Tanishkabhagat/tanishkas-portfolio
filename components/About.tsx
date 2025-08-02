@@ -25,9 +25,7 @@ export default function About() {
           className="text-center mb-8"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-9">About Me</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A dreamy Pisces with a passion for creating beautiful, intuitive designs
-          </p>
+          {/* <p className="text-lg text-gray-600 max-w-2xl mx-auto></p> */}
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-20">
@@ -35,7 +33,7 @@ export default function About() {
 
             <div className="relative rounded-3xl shadow-xl mb-10  w-full max-w-[500px] mx-auto">
               <Image
-                src="/placeholder.svg"
+                src="/tanishka.jpg"
                 alt="Tanishka"
                 width={500}
                 height={600}
@@ -74,9 +72,9 @@ export default function About() {
               {/* <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">UI/UX Design</span> */}
               <span className="px-3 py-1 bg-lavender text-indigo-800 rounded-full text-sm">Graphic Design</span>
               <span className="px-3 py-1 bg-mint text-green-800 rounded-full text-sm">Branding</span>
-              <span className="px-3 py-1 bg-ivory text-amber-800 rounded-full text-sm">Illustration</span>
+              <span className="px-3 py-1 bg-orange-200 text-amber-800 rounded-full text-sm">Illustration</span>
               {/* <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">Web Development</span> */}
-              <span className="px-3 py-1 bg-ivory text-pink-800 rounded-full text-sm">video editing</span>
+              <span className="px-3 py-1 bg-pink-200 text-pink-800 rounded-full text-sm">Video Editing</span>
             </div>
             
           </motion.div>

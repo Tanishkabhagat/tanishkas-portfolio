@@ -43,7 +43,7 @@ export default function ProjectClientPage({ slug}:{slug:string}) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container mx-auto px-4 py-12 md:py-20"
+      className="container mx-auto px-20 py-12 md:py-20"
     >
       <Link
         href="/#portfolio"
@@ -71,7 +71,7 @@ export default function ProjectClientPage({ slug}:{slug:string}) {
             <p>{project.tools}</p>
           </div>
         </div>
-
+{/* 
         <div className="mb-12">
           <Image
             src={project.coverImage || "/placeholder.svg"}
@@ -80,15 +80,16 @@ export default function ProjectClientPage({ slug}:{slug:string}) {
             height={675}
             className="w-full h-auto rounded-xl shadow-lg"
           />
-        </div>
+        </div> */}
 
-        <div className="prose prose-lg max-w-none mb-16">
+
+        <ProjectGallery images={project.gallery} />
+        <div className="prose prose-lg  max-w-[60%] mb-16 mt-8 ">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-pink-700">Project Overview</h2>
           <p>{project.content}</p>
         </div>
-
-        <ProjectGallery images={project.gallery} />
       </motion.div>
     </motion.div>
+
   )
 }

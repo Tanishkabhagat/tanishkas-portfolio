@@ -272,7 +272,7 @@ export default function Hero() {
             >
               <span>Selected Works & Projects</span>
               <span className="mx-2 text-gold">✦</span>
-              <span>2023-2025</span>
+              <span>2024-2025</span>
             </motion.div>
 
             <motion.p
@@ -281,7 +281,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-            Design generalist with a specialist's eye — blending UI/UX, visuals, and motion into seamless, soulful experiences that look as good as they feel.
+            I’m a graphic designer and video editor. From branding to motion, I work across digital formats to create content that connects. Here’s a look at what I’ve made.
             </motion.p>
 
             <motion.div
