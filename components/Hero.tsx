@@ -57,9 +57,22 @@ const AbstractDesign = () => {
           z: translateZ,
         }}
       >
+        {/* ✨ Rotating PNG Element ✨ */}
+        <motion.img
+          src="/fish.png" // Replace with your image path in /public
+          alt="Rotating design element"
+          className="absolute w-[330px] h-[330px] opacity-80 z-10 pointer-events-none"
+          animate={{ rotate: 360 }}
+          transition={{
+            duration: 20,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "linear",
+          }}
+        />
+
         {/* Circle */}
         <motion.div
-          className="absolute w-[300px] h-[300px] rounded-full bg-gradient-to-br from-pink-100/80 to-purple-100/80 backdrop-blur-sm"
+          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-br from-pink-100/80 to-purple-100/80 backdrop-blur-sm"
           initial={{ scale: 0.9 }}
           animate={{ scale: [0.95, 1.05, 0.95] }}
           transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
@@ -67,7 +80,7 @@ const AbstractDesign = () => {
 
         {/* Geometric elements */}
         <motion.div
-          className="absolute w-[250px] h-[250px] rounded-full border-2 border-gold/20"
+          className="absolute w-[300px] h-[300px] rounded-full border-2 border-gold/20"
           style={{
             x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.02),
             y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.02),
@@ -224,7 +237,7 @@ export default function Hero() {
       ))}
 
       {/* Background "PORTFOLIO" text */}
-      <motion.div
+      {/* <motion.div
         className="absolute text-[15vw] font-bold tracking-tighter z-0 select-none text-pink-200"
         style={{
           y: useTransform(scrollYProgress, [0, 1], [0, 100]),
@@ -235,7 +248,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 0.5 }}
       >
         PORTFOLIO
-      </motion.div>
+      </motion.div> */}
 
       {/* Main content container */}
       <motion.div className="container mx-auto px-4 z-10 text-center relative  mt-20 md:mt-0" style={{ y, opacity, scale }}>
@@ -293,7 +306,7 @@ export default function Hero() {
               <motion.a
                 href="#portfolio"
                 className="px-8 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-full font-medium 
-                         shadow-md transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-purple-500"
+                                  shadow-md transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-purple-500"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -302,7 +315,7 @@ export default function Hero() {
               <motion.a
                 href="#contact"
                 className="px-8 py-3 bg-transparent text-gray-700 border border-gray-300 rounded-full 
-                         font-medium shadow-sm transition-all duration-300 hover:shadow-md hover:border-pink-300 hover:text-pink-500"
+                                  font-medium shadow-sm transition-all duration-300 hover:shadow-md hover:border-pink-300 hover:text-pink-500"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -337,4 +350,4 @@ export default function Hero() {
       </motion.div>
     </motion.section>
   )
-}
+} 
