@@ -1,25 +1,6 @@
 import type { Project } from "@/types"
 
 export const projects: Project[] = [
-  /*{
-    id: ,
-    title: "C.H.H.A.Y.A",
-    slug: "temple-anti-theft",
-    category: "Software Development",
-    description: "Computer Vision / Python / Security / Surveillance",
-    coverImage: "/placeholder.svg?height=600&width=800",
-    role: " Designer & Developer (Hardware + Software)",
-    timeline: "June 2025 - Present",
-    tools: "Python, OpenCV, Playsound/Pygame, smtplib, Computer/Laptop, Webcam/CCTV, Speakers, Mobile Phone",
-    content:
-      "C.H.H.A.Y.A (Centralized Harm Handling & Alert Yielding Assistant) is a lightweight, intelligent anti-theft surveillance system designed to protect sacred spaces such as temples using minimal hardware—just a basic computer and camera. The system uses computer vision techniques to detect unauthorized movement in real time, instantly responding with an audible alarm and optionally alerting the caretaker through email or messaging services.",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
-  },*/
   {
     id: 1,
     title: "  EDS Branding",
@@ -50,30 +31,12 @@ export const projects: Project[] = [
     tools: "CapCut, After Effects, Photoshop",
     content:
       "Edited a multi-part explainer video series for Bhindi AI, focused on clear visual pacing and clean transitions. I handled all post-production: cutting voiceovers to match visuals,chroma keying, adding motion graphics, and ensuring consistency across episodes. The goal was clarity, speed, and keeping viewers engaged without overwhelming them.",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
+    video:[
+      "https://youtu.be/Ofsj9E6i5is",
+      "https://www.youtube.com/watch?v=0EpZlmC7f-I",
+      "https://www.youtube.com/watch?v=06P5l5Pk9z0"
+    ]
   },
-  /*{
-    id: ,
-    title: "Social Media Dashboard",
-    slug: "social-media-dashboard",
-    category: "UI/UX",
-    description: "A user-friendly dashboard for social media management",
-    coverImage: "/placeholder.svg?height=600&width=800",
-    role: "UI/UX Designer",
-    timeline: "October 2022 - December 2022",
-    tools: "Figma, Sketch, Principle",
-    content:
-      "I designed a comprehensive social media dashboard that allows users to manage multiple accounts, schedule posts, and analyze performance metrics. The interface features a clean, intuitive design with soft color accents and clear data visualization to make complex information easily digestible.",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
-  },*/
   {
     id: 3,
     title: "Event Branding",
@@ -104,7 +67,7 @@ export const projects: Project[] = [
     tools: "After Effects, CapCut",
     content:
       "Shot and edited a series of cinematic videos with a focus on visual storytelling, atmosphere, and emotion. I handled the full production workflow — from planning shots and capturing footage to editing, sound design, and color grading. Each piece was built to feel intentional and immersive, using light, movement, and pacing to carry the mood.",
-    gallery: [
+    video: [
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",
       "/placeholder.svg?height=600&width=800",

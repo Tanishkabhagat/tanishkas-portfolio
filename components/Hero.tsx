@@ -225,7 +225,7 @@ export default function Hero() {
 
       {/* Background "PORTFOLIO" text */}
       <motion.div
-        className="absolute text-[15vw] font-bold tracking-tighter z-0 select-none text-pink-100/30"
+        className="absolute text-[15vw] font-bold tracking-tighter z-0 select-none text-pink-200"
         style={{
           y: useTransform(scrollYProgress, [0, 1], [0, 100]),
           opacity: useTransform(scrollYProgress, [0, 0.5], [0.3, 0]),

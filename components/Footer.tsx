@@ -19,14 +19,7 @@ export default function Footer() {
             <p className="text-sm text-gray-600 flex items-center">
               Made with <Heart size={14} className="mx-1 text-pink-500" /> in {currentYear}
             </p>
-            <div className="mt-2 text-sm text-gray-500">
-              <Link href="#" className="hover:text-pink-600 transition-colors mr-4">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="hover:text-pink-600 transition-colors">
-                Terms of Service
-              </Link>
-            </div>
+          
           </div>
         </div>
       </div>
