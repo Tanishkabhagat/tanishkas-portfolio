@@ -3,7 +3,7 @@ import Hero from "@/components/Hero"
 import PortfolioGrid from "@/components/PortfolioGrid"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
-import FloatingElements from "@/components/FloatingElements"
+// import FloatingElements from "@/components/FloatingElements"
 
 export const metadata: Metadata = {
   title: "Tanishka | Graphic Designer & video editor",

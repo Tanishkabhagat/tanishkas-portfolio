@@ -2,11 +2,18 @@
 
 import type React from "react"
 
-import { useRef, useEffect } from "react"
+// Add useState to your imports
+import { useRef, useEffect, useState } from "react"
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
 
 // Abstract geometric design component that responds to cursor
 const AbstractDesign = () => {
+  // Add this state to track if the component has mounted
+  const [hasMounted, setHasMounted] = useState(false)
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
   // Mouse position values for interactive elements
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
@@ -17,19 +24,16 @@ const AbstractDesign = () => {
   const rotateY = useSpring(useMotionValue(0), springConfig)
   const translateZ = useSpring(useMotionValue(0), springConfig)
 
-  // Handle mouse movement for the interactive effect
+  // This function is unchanged
   const handleMouseMove = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect()
     const centerX = rect.left + rect.width / 2
     const centerY = rect.top + rect.height / 2
-
-    // Calculate distance from center (normalized to -1 to 1)
     const rotateXValue = ((e.clientY - centerY) / (rect.height / 2)) * 5
     const rotateYValue = ((e.clientX - centerX) / (rect.width / 2)) * -5
     const translateZValue = Math.abs(
       Math.sqrt(Math.pow(e.clientX - centerX, 2) + Math.pow(e.clientY - centerY, 2)) / 10,
     )
-
     rotateX.set(rotateXValue)
     rotateY.set(rotateYValue)
     translateZ.set(translateZValue)
@@ -57,9 +61,9 @@ const AbstractDesign = () => {
           z: translateZ,
         }}
       >
-        {/* ✨ Rotating PNG Element ✨ */}
+        {/* ✨ Rotating PNG Element ✨ (Unchanged) */}
         <motion.img
-          src="/fish.png" // Replace with your image path in /public
+          src="/fish.png"
           alt="Rotating design element"
           className="absolute w-[330px] h-[330px] opacity-80 z-10 pointer-events-none"
           animate={{ rotate: 360 }}
@@ -70,7 +74,7 @@ const AbstractDesign = () => {
           }}
         />
 
-        {/* Circle */}
+        {/* Circle (Unchanged) */}
         <motion.div
           className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-br from-pink-100/80 to-purple-100/80 backdrop-blur-sm"
           initial={{ scale: 0.9 }}
@@ -78,56 +82,88 @@ const AbstractDesign = () => {
           transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
         />
 
-        {/* Geometric elements */}
+        {/* Geometric elements - FIX APPLIED HERE */}
         <motion.div
           className="absolute w-[300px] h-[300px] rounded-full border-2 border-gold/20"
           style={{
-            x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.02),
-            y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.02),
+            x: useTransform(mouseX, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerWidth / 2) * 0.02
+            }),
+            y: useTransform(mouseY, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerHeight / 2) * 0.02
+            }),
           }}
         />
 
         <motion.div
           className="absolute w-[200px] h-[200px] rounded-full border border-purple-200/40"
           style={{
-            x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * -0.01),
-            y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * -0.01),
+            x: useTransform(mouseX, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerWidth / 2) * -0.01
+            }),
+            y: useTransform(mouseY, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerHeight / 2) * -0.01
+            }),
           }}
           animate={{ rotate: 360 }}
           transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
         />
 
-        {/* Stylized silhouette suggestion */}
+        {/* Apply the same fix to all other elements using window */}
         <motion.div
           className="absolute w-[180px] h-[280px] bg-gradient-to-b from-pink-200/60 to-purple-200/60 rounded-full backdrop-blur-sm"
           style={{
-            x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.015),
-            y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.015),
+            x: useTransform(mouseX, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerWidth / 2) * 0.015
+            }),
+            y: useTransform(mouseY, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerHeight / 2) * 0.015
+            }),
           }}
         />
-
-        {/* Abstract design elements */}
         <motion.div
           className="absolute top-[20%] left-[30%] w-[40px] h-[40px] rounded-full bg-gold/30 backdrop-blur-sm"
           style={{
-            x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.03),
-            y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.03),
+            x: useTransform(mouseX, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerWidth / 2) * 0.03
+            }),
+            y: useTransform(mouseY, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerHeight / 2) * 0.03
+            }),
           }}
         />
-
         <motion.div
           className="absolute bottom-[25%] right-[35%] w-[60px] h-[60px] rounded-full bg-purple-200/40 backdrop-blur-sm"
           style={{
-            x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.025),
-            y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.025),
+            x: useTransform(mouseX, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerWidth / 2) * 0.025
+            }),
+            y: useTransform(mouseY, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerHeight / 2) * 0.025
+            }),
           }}
         />
-
         <motion.div
           className="absolute top-[40%] right-[25%] w-[30px] h-[30px] rounded-full bg-pink-300/30 backdrop-blur-sm"
           style={{
-            x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.035),
-            y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.035),
+            x: useTransform(mouseX, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerWidth / 2) * 0.035
+            }),
+            y: useTransform(mouseY, (val) => {
+              if (!hasMounted) return 0
+              return (val - window.innerHeight / 2) * 0.035
+            }),
           }}
         />
       </motion.div>
@@ -151,9 +187,16 @@ const FloatingElement = ({
   depth: number
   delay?: number
 }) => {
+  // Add this state to track if the component has mounted
+  const [hasMounted, setHasMounted] = useState(false)
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
 
+  // This useEffect is already safe as it only runs on the client
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX)
@@ -170,8 +213,15 @@ const FloatingElement = ({
       style={{
         left,
         top,
-        x: useTransform(mouseX, (val) => (val - window.innerWidth / 2) * 0.01 * depth),
-        y: useTransform(mouseY, (val) => (val - window.innerHeight / 2) * 0.01 * depth),
+        // FIX APPLIED HERE
+        x: useTransform(mouseX, (val) => {
+          if (!hasMounted) return 0
+          return (val - window.innerWidth / 2) * 0.01 * depth
+        }),
+        y: useTransform(mouseY, (val) => {
+          if (!hasMounted) return 0
+          return (val - window.innerHeight / 2) * 0.01 * depth
+        }),
       }}
       initial={{ opacity: 0 }}
       animate={{
@@ -188,6 +238,7 @@ const FloatingElement = ({
   )
 }
 
+// The Hero component itself does not need any changes
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -236,22 +287,8 @@ export default function Hero() {
         />
       ))}
 
-      {/* Background "PORTFOLIO" text */}
-      {/* <motion.div
-        className="absolute text-[15vw] font-bold tracking-tighter z-0 select-none text-pink-200"
-        style={{
-          y: useTransform(scrollYProgress, [0, 1], [0, 100]),
-          opacity: useTransform(scrollYProgress, [0, 0.5], [0.3, 0]),
-        }}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 0.3, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        PORTFOLIO
-      </motion.div> */}
-
       {/* Main content container */}
-      <motion.div className="container mx-auto px-4 z-10 text-center relative  mt-20 md:mt-0" style={{ y, opacity, scale }}>
+      <motion.div className="container mx-auto px-4 z-10 text-center relative mt-20 md:mt-0" style={{ y, opacity, scale }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Abstract design on the left for larger screens, centered on mobile */}
           <div className="order-1 flex justify-center">
@@ -294,7 +331,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-            I’m a graphic designer and video editor. From branding to motion, I work across digital formats to create content that connects. Here’s a look at what I’ve made.
+              I’m a graphic designer and video editor. From branding to motion, I work across digital formats to create content that connects. Here’s a look at what I’ve made.
             </motion.p>
 
             <motion.div
@@ -306,7 +343,7 @@ export default function Hero() {
               <motion.a
                 href="#portfolio"
                 className="px-8 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white rounded-full font-medium 
-                                  shadow-md transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-purple-500"
+                                       shadow-md transition-all duration-300 hover:shadow-lg hover:from-pink-500 hover:to-purple-500"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -315,7 +352,7 @@ export default function Hero() {
               <motion.a
                 href="#contact"
                 className="px-8 py-3 bg-transparent text-gray-700 border border-gray-300 rounded-full 
-                                  font-medium shadow-sm transition-all duration-300 hover:shadow-md hover:border-pink-300 hover:text-pink-500"
+                                       font-medium shadow-sm transition-all duration-300 hover:shadow-md hover:border-pink-300 hover:text-pink-500"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -350,4 +387,4 @@ export default function Hero() {
       </motion.div>
     </motion.section>
   )
-} 
+}

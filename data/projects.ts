@@ -61,7 +61,7 @@ export const projects: Project[] = [
     title: "SaaS Motion Graphics ",
     slug: "SaaSdemo",
     category: "Video Editing",
-    description: "Videography & Post Production",
+    description: "Motion Graphics",
     coverImage: "/saas.png",
     role: "video editor",
     timeline: "May 2025 - PRESENT",
