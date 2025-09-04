@@ -14,9 +14,8 @@ export const projects: Project[] = [
     content:
       "I crafted the brand identity for Echelon Dev Society, a hackathon club targeting a Gen Z audience. The brand needed to feel energetic and futuristic while remaining approachable and fun. The identity features a playful cat-bot mascot to embody this balance. The color scheme uses a clean black-and-white base with an electric blue accent for a tech-forward feel, while iridescent gradients add a modern, cutting-edge vibe that connects with its digital-native members.",
     gallery: [
-      "/eds1.png",
-      "/eds2.png",
-      "/eds3.png",
+      {imageSrc: "/eds1.png", instagramUrl: "https://www.instagram.com/p/DD1DrsrKFYV/?img_index=1"},
+      {imageSrc: "/eds2.png"}
     ],
   },
   {
@@ -50,9 +49,9 @@ export const projects: Project[] = [
     content:
       "Created branding and merchandise for Hackwave with a playful, anime-inspired aesthetic. The designs leaned into pastel colors, cute mascot, and clean linework—applied across stickers, badges, tees, and social assets. The goal was to capture an energetic, friendly vibe that resonated with a creative, online-first community.",
     gallery: [
-      "/hackwave2.png",
-      "/hackwave3.png",
-      "/hackwave4.png",
+      {imageSrc: "/hackwave2.png" , instagramUrl:"https://www.instagram.com/p/DMKAjATSEuE/?img_index=1"},
+      {imageSrc: "/hackwave3.png"},
+      {imageSrc: "/hackwave4.png" , instagramUrl:"https://www.instagram.com/p/DMfaeHlKFcd/?img_index=1"},
     ],
   },
 
@@ -94,7 +93,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "KANBAN BOARD",
-    slug: "temple-anti-theft",
+    slug: "kanbanboard",
     category: "Front-End Development",
     description: "Task Management / Web App / Minimal ",
     coverImage: "/kanban3.png",
@@ -104,8 +103,9 @@ export const projects: Project[] = [
     content:
       "This project is a client-side Kanban board application that I built using Next.js and React. It provides a straightforward way to manage tasks across different stages (like To Do, In Progress, and Done) with an intuitive drag-and-drop interface for moving tasks around. Core Functionality: Drag-and-Drop, Data Persistence, Task Management Customization. ",
     gallery: [
-      "/kanban1.png?height=600&width=800",
-      "/kanban2.png?height=600&width=800",
+      {imageSrc: "/kanban1.png?height=600&width=800", instagramUrl: "https://tanishkas-kanban-board.vercel.app/"},
+      {imageSrc: "/kanban2.png?height=600&width=800",},
+    
     ],
   }
 ]
