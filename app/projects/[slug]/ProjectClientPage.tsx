@@ -21,7 +21,7 @@ export default function ProjectClientPage({ slug }: { slug: string }) {
 
   if (!project) {
     return (
-      <div className="container mx-auto px-4 py-20 text-center">
+      <div className="container mx-auto px-5 py-20 text-center">
         Project not found
       </div>
     );
@@ -32,7 +32,7 @@ export default function ProjectClientPage({ slug }: { slug: string }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container mx-auto px-20 py-12 md:py-20"
+      className="container mx-auto my-10 px-4 sm:px-6 md:px-12 lg:px-20 py-12"
     >
       <Link
         href="/#portfolio"
@@ -71,7 +71,7 @@ export default function ProjectClientPage({ slug }: { slug: string }) {
 
         <ProjectGallery images={project.gallery} videos={project.video} />
 
-        <div className="prose prose-lg  max-w-[60%] mb-16 mt-8 ">
+        <div className="prose prose-lg max-w-prose mb-16 mt-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-pink-700">
             Project Overview
           </h2>

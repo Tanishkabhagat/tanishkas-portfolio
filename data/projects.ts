@@ -26,7 +26,7 @@ export const projects: Project[] = [
     description: "Motion Graphics, Video Post Production",
     coverImage: "/expl.png",
     role: "Video Editor",
-    timeline: "July 2025 - PRESENT",
+    timeline: "July 2025 - August 2025",
     tools: "CapCut, After Effects, Photoshop",
     content:
       "Edited a multi-part explainer video series for Bhindi AI, focused on clear visual pacing and clean transitions. I handled all post-production: cutting voiceovers to match visuals,chroma keying, adding motion graphics, and ensuring consistency across episodes. The goal was clarity, speed, and keeping viewers engaged without overwhelming them.",
@@ -47,16 +47,19 @@ export const projects: Project[] = [
     timeline: "July 2025 - Aug 2025",
     tools: "Adobe Illustrator, Photoshop, Kittl, After Affects",
     content:
-      "Created branding and merchandise for Hackwave with a playful, anime-inspired aesthetic. The designs leaned into pastel colors, cute mascot, and clean linework—applied across stickers, badges, tees, and social assets. The goal was to capture an energetic, friendly vibe that resonated with a creative, online-first community.",
+      "Created branding and merchandise for Hackwave with a playful, anime-inspired aesthetic. The designs leaned into pastel colors, cute mascot, and clean linework—applied across banners, ID's, tees, certificates and social assets. The goal was to capture an energetic, friendly vibe that resonated with a creative, online-first community.",
     gallery: [
       {imageSrc: "/hackwave2.png" , instagramUrl:"https://www.instagram.com/p/DMKAjATSEuE/?img_index=1"},
       {imageSrc: "/hackwave3.png"},
       {imageSrc: "/hackwave4.png" , instagramUrl:"https://www.instagram.com/p/DMfaeHlKFcd/?img_index=1"},
+      {imageSrc: "/hackwave5.jpeg"},
+      {imageSrc: "/hackwave6.jpeg"},
+      {imageSrc: "/hackwave7.jpg"},
     ],
   },
 
 {
-    id: 6  ,
+    id: 4  ,
     title: "SaaS Motion Graphics ",
     slug: "SaaSdemo",
     category: "Video Editing",
@@ -74,7 +77,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Cinematic Edits",
     slug: "cinematography",
     category: "Video Editing",
@@ -91,7 +94,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "KANBAN BOARD",
     slug: "kanbanboard",
     category: "Front-End Development",

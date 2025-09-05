@@ -34,8 +34,6 @@ export default function ProjectGallery({ images, videos }: ProjectGalleryProps) 
       {images && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {images.map((item, index) => {
-            // THE CORE LOGIC IS HERE:
-            // If an instagramUrl exists, we render a Link component.
             if (item.instagramUrl) {
               return (
                 <Link key={index} href={item.instagramUrl} target="_blank" rel="noopener noreferrer">
@@ -57,8 +55,6 @@ export default function ProjectGallery({ images, videos }: ProjectGalleryProps) 
                 </Link>
               );
             }
-
-            // OTHERWISE, we render the original div that triggers the lightbox.
             return (
               <motion.div
                 key={index}
@@ -82,14 +78,13 @@ export default function ProjectGallery({ images, videos }: ProjectGalleryProps) 
         </div>
       )}
 
-      {/* Your video and lightbox logic remains unchanged */}
       {videos && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
           {videos.map((videoUrl, index) => {
              const embedUrl = videoUrl.includes("youtube.com") ? videoUrl.replace("watch?v=", "embed/") : videoUrl;
              return (
-               <motion.div /* ... your video code ... */ >
-                 <iframe src={embedUrl} /* ... */ />
+               <motion.div>
+                 <iframe src={embedUrl}/>
                </motion.div>
              );
           })}
