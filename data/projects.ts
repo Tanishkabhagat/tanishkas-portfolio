@@ -1,21 +1,39 @@
 import type { Project } from "@/types"
 
 export const projects: Project[] = [
-  {
+  // {
+  //   id: 1,
+  //   title: "  EDS Branding",
+  //   slug: "EDSBranding",
+  //   category: "Graphic Design",
+  //   description: "Complete brand identity for a college club",
+  //   coverImage: "/edscover.png",
+  //   role: "Brand Designer",
+  //   timeline: "Nov 2024 - Dec 2024",
+  //   tools: "Adobe Illustrator, Photoshop, Canva",
+  //   content:
+  //     "I crafted the brand identity for Echelon Dev Society, a hackathon club targeting a Gen Z audience. The brand needed to feel energetic and futuristic while remaining approachable and fun. The identity features a playful cat-bot mascot to embody this balance. The color scheme uses a clean black-and-white base with an electric blue accent for a tech-forward feel, while iridescent gradients add a modern, cutting-edge vibe that connects with its digital-native members.",
+  //   gallery: [
+  //     {imageSrc: "/eds1.png", instagramUrl: "https://www.instagram.com/p/DD1DrsrKFYV/?img_index=1"},
+  //     {imageSrc: "/eds2.png"}
+  //   ],
+  // },
+   {
     id: 1,
-    title: "  EDS Branding",
-    slug: "EDSBranding",
+    title: "Alekhya Design Studio",
+    slug: "alekhyabranding",
     category: "Graphic Design",
-    description: "Complete brand identity for a college club",
-    coverImage: "/edscover.png",
+    description: "Complete brand identity for an interior design studio",
+    coverImage: "/alekhyacover.png",
     role: "Brand Designer",
-    timeline: "Nov 2024 - Dec 2024",
+    timeline: "Feb 2024 - April 2024",
     tools: "Adobe Illustrator, Photoshop, Canva",
     content:
-      "I crafted the brand identity for Echelon Dev Society, a hackathon club targeting a Gen Z audience. The brand needed to feel energetic and futuristic while remaining approachable and fun. The identity features a playful cat-bot mascot to embody this balance. The color scheme uses a clean black-and-white base with an electric blue accent for a tech-forward feel, while iridescent gradients add a modern, cutting-edge vibe that connects with its digital-native members.",
+      "I redesigned the brand identity for Alekya Design Studio, An interior design Studio Based in in the Heart of Pune Maharashtra. The brand needed to feel more welcoming and earthy while remaining trustworthy and modern. The identity features a logo inpired by the co-founder's own rough sketch, to give it a personal touch and a quirk similar to the 2 architects behind the brand. The color scheme uses an earthy beige pallete along with geometric shapes that adds strucure as well as warmth to the over-all aesthetic of the brand",
     gallery: [
-      {imageSrc: "/eds1.png", instagramUrl: "https://www.instagram.com/p/DD1DrsrKFYV/?img_index=1"},
-      {imageSrc: "/eds2.png"}
+      {imageSrc: "/alekhyacover.png", instagramUrl: "https://www.instagram.com/p/DIPABJZSboC/?img_index=3"},
+      {imageSrc: "/alekhya2.png"},
+      {imageSrc: "/alekhya3.png"},
     ],
   },
   {
@@ -33,7 +51,10 @@ export const projects: Project[] = [
     video:[
       "https://www.youtube.com/watch?v=0EpZlmC7f-I",
       "https://www.youtube.com/watch?v=Ofsj9E6i5is",
-      "https://www.youtube.com/watch?v=06P5l5Pk9z0"
+      "https://www.youtube.com/watch?v=06P5l5Pk9z0",
+      "https://www.youtube.com/watch?v=SiPvVPP0J78",
+      "https://www.youtube.com/watch?v=MyY34c1Y0kI"
+
     ]
   },
   {
@@ -93,22 +114,4 @@ export const projects: Project[] = [
     ],
   },
 
-  {
-    id: 6,
-    title: "KANBAN BOARD",
-    slug: "kanbanboard",
-    category: "Front-End Development",
-    description: "Task Management / Web App / Minimal ",
-    coverImage: "/kanban3.png",
-    role: " Developer",
-    timeline: "July 2025",
-    tools: "Next.JS, TailwindCSS, Web Storage API, React",
-    content:
-      "This project is a client-side Kanban board application that I built using Next.js and React. It provides a straightforward way to manage tasks across different stages (like To Do, In Progress, and Done) with an intuitive drag-and-drop interface for moving tasks around. Core Functionality: Drag-and-Drop, Data Persistence, Task Management Customization. ",
-    gallery: [
-      {imageSrc: "/kanban1.png?height=600&width=800", instagramUrl: "https://tanishkas-kanban-board.vercel.app/"},
-      {imageSrc: "/kanban2.png?height=600&width=800",},
-    
-    ],
-  }
 ]

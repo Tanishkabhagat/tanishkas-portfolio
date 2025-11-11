@@ -5,6 +5,12 @@ import { motion } from "framer-motion"
 const timelineItems = [
   {
     year: "2025",
+    title: "Video & Graphic Designer",
+    company: "Freelance",
+    description: "worked with multiple brands to create engaging content while adhereing to the brand identity and values.",
+  },
+  {
+    year: "2025",
     title: "Content & Brand Designer",
     company: "Alekhya Design Studio (Pune)",
     description: "Led the visual branding for the studio, including logo design, brand identity, and social media creatives. ",
