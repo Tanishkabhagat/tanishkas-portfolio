@@ -23,15 +23,6 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden">
       <Hero />
-      <LogoLoop logos={imageLogos} speed={10}
-        direction="left"
-        logoHeight={200}
-        gap={90}
-        hoverSpeed={0}
-        scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
-        ariaLabel="Technology partners" className="mt-20"/>
       <PortfolioGrid />
       <About />
       <Contact />

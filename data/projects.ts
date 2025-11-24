@@ -47,7 +47,7 @@ export const projects: Project[] = [
     timeline: "July 2025 - August 2025",
     tools: "CapCut, After Effects, Photoshop",
     content:
-      "Edited a multi-part explainer video series for Bhindi AI, focused on clear visual pacing and clean transitions. I handled all post-production: cutting voiceovers to match visuals,chroma keying, adding motion graphics, and ensuring consistency across episodes. The goal was clarity, speed, and keeping viewers engaged without overwhelming them.",
+      "Edited a multi-part explainer video series by Mohd Amaan for Bhindi AI, focused on clear visual pacing and clean transitions. I handled all post-production: cutting voiceovers to match visuals,chroma keying, adding motion graphics, and ensuring consistency across episodes. The goal was clarity, speed, and keeping viewers engaged without overwhelming them.",
     video:[
       "https://www.youtube.com/watch?v=0EpZlmC7f-I",
       "https://www.youtube.com/watch?v=Ofsj9E6i5is",
