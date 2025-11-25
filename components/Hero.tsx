@@ -331,7 +331,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              I’m a graphic designer and video editor. From branding to motion, I work across digital formats to create content that connects. Here’s a look at what I’ve made.
+              Designer and video editor. From branding to motion, I make content that works. helping accounts reach 100k+ followers and 1M+ views. Here’s my recent work!
             </motion.p>
 
             <motion.div

@@ -56,11 +56,11 @@ export default function About() {
             <div className="space-y-4 text-gray-700">
               
               <p>
-                I’m a multidisciplinary Graphic Designer and Video Editor with a sharp eye for detail and a deep love for visual storytelling. From dynamic motion graphics to sleek branding suites, I transform ideas into visuals that connect, inform, and captivate.
+                Designing and editing since I was a teen. Today, I help brands and creators build their visual identity. I know what works because I do it myself, my own content has racked up 900k+ views. Whether it's branding or motion, I create visuals that get attention
               </p>
               <h1 className="font-bold text-lg text-pink-600"> What I do </h1>
               <li className=""> <b>Design for digital:</b> social posts, branding, layouts, promo graphics</li>
-              <li> <b>Edit videos:</b>  short-form, long-form, content cuts, event edits</li>
+              <li> <b>Edit videos:</b>  short-form, long-form, content cuts, promo edits</li>
               <li> <b>Add motion:</b> animated text, smooth transitions, logo builds</li>
 
             
