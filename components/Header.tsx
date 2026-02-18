@@ -32,14 +32,24 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-playfair font-bold text-pink-600">
-          Tanishka
+        {/* Logo Section - Adjusted for Size */}
+        <Link href="/" className="flex items-center">
+          <img 
+            src="/logo.svg" 
+            alt="Tanishka Logo" 
+            // Changed h-8 to h-12 and md:h-10 to md:h-16
+            className="h-12 md:h-16 w-auto object-contain transition-all duration-300"
+          />
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-gray-700 hover:text-pink-600 transition-colors">
+            <Link 
+              key={item.name} 
+              href={item.href} 
+              className="text-gray-700 hover:text-pink-600 transition-colors font-medium"
+            >
               {item.name}
             </Link>
           ))}
@@ -47,7 +57,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-gray-700 p-2 focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -62,14 +72,14 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white"
+            className="md:hidden bg-white border-b overflow-hidden"
           >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-pink-600 transition-colors py-2"
+                  className="text-gray-700 hover:text-pink-600 transition-colors py-2 text-lg font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
