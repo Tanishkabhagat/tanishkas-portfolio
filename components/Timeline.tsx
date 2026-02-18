@@ -3,11 +3,24 @@
 import { motion } from "framer-motion"
 
 const timelineItems = [
+  // {
+  //   year: "2025",
+  //   title: "Video & Graphic Designer",
+  //   company: "Freelance",
+  //   description: "worked with multiple brands to create engaging content while adhereing to the brand identity and values.",
+  // },
   {
     year: "2025",
-    title: "Video & Graphic Designer",
-    company: "Freelance",
-    description: "worked with multiple brands to create engaging content while adhereing to the brand identity and values.",
+    title: "Brand Strategist",
+    company: "Adnitee Advertising (Nashik)",
+    description: " carried out research, rebranding, social media strategy and packaging design for multiple clients.",
+  },
+  
+   {
+    year: "2025",
+    title: "Video Editor & Tech Content Specialist",
+    company: "Aurbit Labs (Lucknow)",
+    description: "edited over 20+ long and short-form videos to promote emerging tech startups like Bhindi AI & Mogra AI.",
   },
   {
     year: "2025",
@@ -17,7 +30,7 @@ const timelineItems = [
   },
   {
     year: "2024",
-    title: "Core Team (Content Creation)",
+    title: "Core Team Member (Content Creation)",
     company: "Friends of Figma (Indore)",
     description: " Created reels, handled event videography, and contributed to design discussions during local meetups.",
   },
@@ -33,12 +46,12 @@ const timelineItems = [
     institute: "Chameli Devi Group of Institutions",
     description: "Specializing in Artificial Intelligence and Data Science with a focus on machine learning, deep learning, data analytics, and intelligent systems. ",
   },
-  {
-    year: "2021",
-    title: "10+2(PCM) ",
-    company: "GOLDEN INTERNATIONAL SCHOOL",
-    description: "Completed senior secondary education with Physics, Chemistry, and Mathematics as core subjects.",
-  },
+  // {
+  //   year: "2019",
+  //   title: "10+2(PCM) ",
+  //   company: "GOLDEN INTERNATIONAL SCHOOL",
+  //   description: "Completed senior secondary education with Physics, Chemistry, and Mathematics as core subjects.",
+  // },
 ]
 
 export default function Timeline() {

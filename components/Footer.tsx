@@ -14,7 +14,7 @@ export default function Footer() {
             </Link> */}
             <p className="text-sm text-gray-600 mt-1">take care friend</p>
           </div>
-
+ 
           <div className="flex flex-col items-center md:items-end">
             <p className="text-sm text-gray-600 flex items-center">
               Made with <Heart size={14} className="mx-1 text-pink-500" /> in {currentYear}

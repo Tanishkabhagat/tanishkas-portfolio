@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Send, Mail, Phone, MapPin } from "lucide-react"
+import { Send, Mail, Phone, MapPin, File } from "lucide-react"
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -74,11 +74,11 @@ export default function Contact() {
 
               <div className="flex items-start">
                 <div className="bg-pink-100 p-3 rounded-full mr-4">
-                  <Phone className="text-pink-700 w-5 h-5" />
+                  <File className="text-pink-700 w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Phone</h4>
-                  <p className="text-gray-600">+91 9981117222</p>
+                  <h4 className="font-semibold mb-1 ">Resume</h4>
+                  <a href="https://resumate-io.vercel.app/preview/8368d196-c061-46f4-a794-a75ad8d1979d" target="blank" className="text-gray-600 hover:text-pink-700" >Click to Open</a>
                 </div>
               </div>
 

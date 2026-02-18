@@ -20,7 +20,7 @@ export const projects: Project[] = [
   // },
    {
     id: 1,
-    title: "Alekhya Design Studio",
+    title: "Interior Designer Btranding",
     slug: "alekhyabranding",
     category: "Graphic Design",
     description: "Complete brand identity for an interior design studio",
@@ -95,6 +95,7 @@ export const projects: Project[] = [
     video: [
       "https://www.youtube.com/watch?v=p-5awdlWU0U",
       "https://www.youtube.com/watch?v=sPQ7Hnvh4kQ",
+      "https://youtube.com/watch?v=T3_Ms5XyCZs"
     ],
   },
 
@@ -112,6 +113,95 @@ export const projects: Project[] = [
       "Shot and edited a series of cinematic videos with a focus on visual storytelling, atmosphere, and emotion. I handled the full production workflow — from planning shots and capturing footage to editing, sound design, and color grading. utilised light, movement, and pacing to carry the mood.",
     video: [
       "https://www.youtube.com/watch?v=kfQEChhYTFA",
+    ],
+  },
+
+    {
+    id: 6,
+    title: "Logo design",
+    slug: "lapislime",
+    category: "Graphic Design",
+    description: "Logo Design",
+    coverImage: "/logocover.png",
+    role: "Designer",
+    timeline: "January 2026",
+    tools: "Figma, Canva, Nano Banana pro (mockup generation )",
+    content:
+      "",
+     gallery: [
+      {imageSrc: "/lapisnlime.png"},
+      {imageSrc: "/kalore.png"},
+      {imageSrc: "/vatajatadi.png"},
+    ],
+  },
+ {
+    id: 7,
+    title: "Therapist Web Design",
+    slug: "therapywebdesign",
+    category: "UI",
+    description: "Therapist Web Design",
+    coverImage: "/growmyther.jpeg",
+    role: "Web Designer",
+    timeline: "February 2026",
+    tools: "Figma",
+    content:
+      "",
+     gallery: [
+      {imageSrc: "/therapywebhero.jpeg",instagramUrl:"https://grow-my-therapyyy.vercel.app/"},
+      {imageSrc: "/therapywebfigma.jpeg"},
+    ],
+  },
+  {
+    id: 9,
+    title: "Influenso Web design",
+    slug: "InfluensoWebdesign",
+    category: "UI",
+    description: "Therapist Web Design",
+    coverImage: "/influensocover.jpeg",
+    role: "Web Designer",
+    timeline: "February 2026",
+    tools: "Figma",
+    content:
+      "",
+     gallery: [
+      {imageSrc: "/influensohero.jpeg",instagramUrl:"https://influenso-in.vercel.app/"},
+    ],
+  },
+  {
+    id: 8,
+    title: "Illustration",
+    slug: "illustration",
+    category: "Graphic Design",
+    description: "Illustration",
+    coverImage: "/illustrationcover.png",
+    role: "Illustrator",
+    timeline: "December 2026",
+    tools: "Ibis Paint X, Canva",
+    content:
+      "",
+     gallery: [
+      {imageSrc: "/tudu.png"},
+    ],
+  },
+  
+  {
+    id: 10,
+    title: " short form videos",
+    slug: "shortformvideos",
+    category: "Video Editing",
+    description: "short form videos",
+    coverImage: "/shortformcover.png",
+    role: "Video Editor",
+    timeline: "January 2026",
+    tools: "Capcut",
+    content:
+      "",
+      video: [
+      "https://youtube.com/watch?v=bBXtKUgCqRY",
+      "https://www.youtube.com/watch?v=1yKlZoWWagI",
+      "https://youtube.com/watch?v=uervoRxgS-E",
+      "https://youtube.com/watch?v=Z6Uuqci-mlE",
+      "https://youtube.com/watch?v=SM-nr_kqQ3Y"
     ],
   },
 
